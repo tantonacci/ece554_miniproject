@@ -55,7 +55,7 @@ module afu
    );
    
    fifo f(.clk(clk), .rst_n(~rst), .en(rx.c0.mmioWrValid || rx.c0.mmioRdValid),
-	        .d(rx.c0.data), .q(tx.c0.data));
+	        .d(rx.c0.data), .q(tx.c2.data));
 
    // The AFU must respond with its AFU ID in response to MMIO reads of the CCI-P device feature 
    // header (DFH).  The AFU ID is a unique ID for a given program. Here we generated one with 
