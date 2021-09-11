@@ -55,11 +55,9 @@ int main(int argc, char *argv[]) {
     // Test 100 different writes and reads to the user MMIO register.
     unsigned errors = 0;
     for (uint64_t i=0; i < 100; i++) {
-      afu.write(USER_REG_ADDR, i);
-	  
 	  // 8 buffer locations, have to get to correct one
 	  for (uint64_t j=0; j < 7; j++) {
-		  afu.read(USER_REG_ADDR);
+		  afu.write(USER_REG_ADDR, i);
 	  }
 	  
       uint64_t result = afu.read(USER_REG_ADDR);
