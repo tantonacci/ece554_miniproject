@@ -56,7 +56,7 @@ int main(int argc, char *argv[]) {
     unsigned errors = 0;
     for (uint64_t i=0; i < 100; i++) {
 	  // 8 buffer locations, have to get to correct one
-	  for (uint64_t j=0; j < 7; j++) {
+	  for (uint64_t j=0; j < 8; j++) {
 		  afu.write(USER_REG_ADDR, i);
 	  }
 	  
