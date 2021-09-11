@@ -25,6 +25,7 @@ module fifo
      begin
 	if (!rst_n)
 	  begin
+		ind <= 0;
 	    for (integer i = 0; i < DEPTH; i++) begin
 		f[i] <= 0;
 	    end

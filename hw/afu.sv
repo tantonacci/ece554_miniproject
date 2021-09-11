@@ -53,6 +53,9 @@ module afu
    input  t_if_ccip_Rx rx,
    output t_if_ccip_Tx tx
    );
+   
+   fifo f(.clk(clk), .rst_n(~rst), .en(rx.c0.mmioWrValid || rx.c0.mmioRdValid),
+	        .d(rx.c0.data), .q(tx.c0.data));
 
    // The AFU must respond with its AFU ID in response to MMIO reads of the CCI-P device feature 
    // header (DFH).  The AFU ID is a unique ID for a given program. Here we generated one with 
@@ -86,6 +89,7 @@ module afu
              // Check to see if there is a valid write being received from the processor.
              if (rx.c0.mmioWrValid == 1)
                begin
+			   
 		  // Check the address of the write request. If it maches the address of the
 		  // memory-mapped register (h0020), then write the received data on channel c0 
 		  // to the register.
@@ -118,7 +122,7 @@ module afu
 
              // If there is a read request from the processor, handle that request.
              if (rx.c0.mmioRdValid == 1'b1)
-               begin
+               begin			   
                   // Copy TID, which the host needs to map the response to the request.
                   tx.c2.hdr.tid <= mmio_hdr.tid;
 
