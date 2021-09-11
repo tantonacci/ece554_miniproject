@@ -1,0 +1,76 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.2_2 2021.06, Jun 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/filespace/a/antonacci/ece554/ece554_miniproject/hw
+T_opt
+!s110 1631232806
+V_hMJObGhiTAb3Cb1?326T0
+04 7 4 work fifo_tb fast 0
+=1-000ae431a4f1-613aa326-154fd-3a06
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work
+Z2 tCvgOpt 0
+n@_opt
+OE;O;2021.2_2;73
+R1
+vfifo
+Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+!s110 1631233270
+!i10b 1
+!s100 4OX:l42RCY2j8_`[KJC;;0
+IHW`d_j0RDgDO<m5n58gPD1
+S1
+R1
+w1631233221
+8/filespace/a/antonacci/ece554/ece554_miniproject/hw/fifo.sv
+F/filespace/a/antonacci/ece554/ece554_miniproject/hw/fifo.sv
+!i122 13
+L0 6 36
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OE;L;2021.2_2;73
+r1
+!s85 0
+31
+!s108 1631233269.000000
+!s107 /filespace/a/antonacci/ece554/ece554_miniproject/hw/fifo.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/a/antonacci/ece554/ece554_miniproject/hw/fifo.sv|
+!i113 0
+Z6 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vfifo_tb
+R3
+!s110 1631232690
+!i10b 1
+!s100 J`J:jF?4e0c>Y]JOTf_U00
+Ii[ZgSO20j[8ZRUEEBNkbi3
+S1
+R1
+w1631225523
+8/filespace/a/antonacci/ece554/ece554_miniproject/hw/fifo_tb.sv
+F/filespace/a/antonacci/ece554/ece554_miniproject/hw/fifo_tb.sv
+!i122 10
+L0 3 95
+R4
+R5
+r1
+!s85 0
+31
+!s108 1631232689.000000
+!s107 /filespace/a/antonacci/ece554/ece554_miniproject/hw/fifo_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/a/antonacci/ece554/ece554_miniproject/hw/fifo_tb.sv|
+!i113 0
+R6
+R2
