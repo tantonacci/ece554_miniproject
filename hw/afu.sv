@@ -64,7 +64,7 @@ module afu
    // User register (memory mapped to address h0020) to test MMIO over CCI-P.
    logic [63:0]  user_reg, reg_out;
    
-   fifo f(.clk(clk), .rst_n(~rst), .en(rx.c0.mmioWrValid || rx.c0.mmioRdValid),
+   fifo f(.clk(clk), .rst_n(~rst), .en(rx.c0.mmioWrValid),
 	        .d(user_reg), .q(reg_out));
    
    // The Rx c0 header is normally used for responses to reads from the host processor's memory.
